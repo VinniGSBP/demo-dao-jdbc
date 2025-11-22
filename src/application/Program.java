@@ -1,7 +1,5 @@
 package application;
 
-import java.util.Scanner;
-
 import model.dao.DaoFactory;
 import model.dao.SellerDao;
 import model.entities.Seller;
@@ -13,7 +11,7 @@ public class Program {
 		
 		SellerDao sellerDao = DaoFactory.createSellerDao();
 		
-		
+		System.out.println("==== TEST 1: SELLER FINDBYID =====");
 		Seller sel = sellerDao.findById(3);
 		
 		
